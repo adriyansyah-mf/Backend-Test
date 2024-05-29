@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "test-recruitement"
+version = "0.1.0"
+description = ""
+authors = ["adriyansyahmf <adriyansyahmf0@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+attrs = "^23.2.0"
+sqlalchemy = "^2.0.30"
+python-dotenv = "^1.0.1"
+environ-config = "^23.2.0"
+passlib = "1.7.4"
+asyncpg = "^0.29.0"
+pyjwt = "^2.8.0"
+psycopg2-binary = "^2.9.9"
+fastapi = "^0.111.0"
+bcrypt = "4.1.1"
+pydantic = "^2.7.2"
+python-jose = "^3.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

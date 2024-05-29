@@ -24,7 +24,7 @@ async def get_connection() -> AsyncConnection:
 
 async def get_name(token: str = Depends(admin_login_schema)) -> str:
     """
-    mendapatkan uuid dari token
+    get name from token
     """
     try:
         new_token = TokenMaker().verify_token(token, cfg.password.token_key)
@@ -36,7 +36,7 @@ async def get_id(
     conn: AsyncConnection = Depends(get_connection), name_: str = Depends(get_name)
 ) -> AsyncIterator[Tuple[int, AsyncConnection]]:
     """
-    mendapatkan id dari token
+    get id by token
     """
     a = Admin(conn)
     try:
